@@ -1,51 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grids layout - columns</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <style>
-        body{
-            font-family: Arial;
-        }
-        .container{
-            display: grid;
-            grid-template: repeat(4, 100px) / repeat(3, 200px);
-            height: 100vh;
-            text-align: center;
-            grid-gap: 5px;
-            justify-content: center;
-            align-content: center;
-            /* justify-items: center;
-            align-items: center; */
-            /* grid-auto-flow: column; */
-            /* en firefox solo se acepta un valor */
-        }
-        .item{
-            background-color: rgb(206, 126, 99);
-        }
-        .item:nth-of-type(5){
-            /* justify-self: stretch;
-            align-self: stretch; */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="item">contenido #1</div>
-        <div class="item">contenido #2</div>
-        <div class="item">contenido #3</div>
-        <div class="item">contenido #4</div>
-        <div class="item">contenido #5</div>
-        <div class="item">contenido #6</div>
-        <div class="item">contenido #7</div>
-        <div class="item">contenido #8</div>
-        <div class="item">contenido #9</div>
-        <div class="item">contenido #10</div>
-        <div class="item">contenido #11</div>
-        <div class="item">contenido #12</div>
-    </div>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image1.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image2.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image3.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image1.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image2.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image3.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image1.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image2.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image3.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image2.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="./image3.jpg" alt="">
+            </figure>
+            <div class="post-overlay">
+                <p>
+                    <span class="post-likes">10</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </div>
+        </a>
+    </section>
 </body>
 </html>
