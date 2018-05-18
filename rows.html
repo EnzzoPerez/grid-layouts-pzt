@@ -12,12 +12,11 @@
         }
         .container{
             display: grid;
-            /* grid-template-columns: 25% 25% 25%;
-            grid-template-rows: 100px 300px; */
-            /* grid-template: 25% 25% 25% 25% / 25% 30% 25%; */
-            /* grid-template: 25% 25% 25% 25% / 2fr 4fr 1fr; */
-            /* grid-template: 25% 25% 25% 25% / repeat(4, 1fr); */
-            grid-template: 25% 25% 25% 25% / minmax(100px, 200px) 1fr 1fr 1fr;
+            grid-template: 150px 1fr 100px / 1fr 3fr;
+            grid-template-areas: "header header"
+                                 "sidebar contenido"
+                                 "footer footer";
+            height: 100vh;
             text-align: center;
             /* grid-column-gap: 10px;
             grid-row-gap: 5px; */
@@ -26,33 +25,26 @@
         .item{
             background-color: rgb(206, 126, 99);
         }
-        .item:nth-of-type(5) {
-            background-color: rgb(141, 120, 179);
-            overflow: auto;
-            display: grid;
-            grid-template: 50% 50% / 25% 50% 25%;
+        .header{
+            grid-area: header;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .contenido{
+            grid-area: contenido;
+        }
+        .footer{
+            grid-area: footer;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">contenido #1</div>
-        <div class="item">contenido #2</div>
-        <div class="item">contenido #3</div>
-        <div class="item">contenido #4</div>
-        <div class="item">
-            <div class="item">subitem #1</div>
-            <div class="item">subitem #2</div>
-            <div class="item">subitem #3</div>
-            <div class="item">subitem #4</div>
-        </div>
-        <div class="item">contenido #6</div>
-        <div class="item">contenido #7</div>
-        <div class="item">contenido #8</div>
-        <div class="item">contenido #9</div>
-        <div class="item">contenido #10</div>
-        <div class="item">contenido #11</div>
-        <div class="item">contenido #12</div>
+        <div class="item header">contenido #1</div>
+        <div class="item sidebar">contenido #2</div>
+        <div class="item contenido">contenido #3</div>
+        <div class="item footer">contenido #4</div>
     </div>
 </body>
 </html>
