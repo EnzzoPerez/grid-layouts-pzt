@@ -12,16 +12,20 @@
         }
         .container{
             display: grid;
-            grid-template: 200px 200px / repeat(7, 1fr);
+            grid-template-columns: [inicio] 1fr repeat(6, 1fr) [final];
+            grid-template-rows: [inicio-row] 200px 200px [final-row];
             height: 100vh;
             text-align: center;
             grid-gap: 5px;
+            /* grid-auto-flow: column; */
+            /* en firefox solo se acepta un valor */
+            grid-auto-rows: 150px;
         }
         .item{
             background-color: rgb(206, 126, 99);
         }
         .item:nth-of-type(1) {
-            grid-column: span 3;
+            grid-column: 1 / 4;
             grid-row: span 2;
         }
         .item:nth-of-type(2) {
@@ -39,6 +43,18 @@
         <div class="item">contenido #1</div>
         <div class="item">contenido #2</div>
         <div class="item">contenido #3</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
         <div class="item">contenido #4</div>
         <div class="item">contenido #5</div>
     </div>
