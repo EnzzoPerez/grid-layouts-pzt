@@ -12,10 +12,7 @@
         }
         .container{
             display: grid;
-            grid-template: 150px 1fr 100px / 1fr 3fr;
-            grid-template-areas: "header header"
-                                 "sidebar contenido"
-                                 "footer footer";
+            grid-template: repeat(4, 1fr) / repeat(3, 1fr);
             height: 100vh;
             text-align: center;
             /* grid-column-gap: 10px;
@@ -25,26 +22,29 @@
         .item{
             background-color: rgb(206, 126, 99);
         }
-        .header{
-            grid-area: header;
+        .item:nth-of-type(8) {
+            /* grid-column: 2 / 4 */
+            grid-column: 1 / -1;
         }
-        .sidebar{
-            grid-area: sidebar;
-        }
-        .contenido{
-            grid-area: contenido;
-        }
-        .footer{
-            grid-area: footer;
+        .item:nth-of-type(1) {
+            grid-column: 1 / 3
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item header">contenido #1</div>
-        <div class="item sidebar">contenido #2</div>
-        <div class="item contenido">contenido #3</div>
-        <div class="item footer">contenido #4</div>
+        <div class="item">contenido #1</div>
+        <div class="item">contenido #2</div>
+        <div class="item">contenido #3</div>
+        <div class="item">contenido #4</div>
+        <div class="item">contenido #5</div>
+        <div class="item">contenido #6</div>
+        <div class="item">contenido #7</div>
+        <div class="item">contenido #8</div>
+        <div class="item">contenido #9</div>
+        <div class="item">contenido #10</div>
+        <div class="item">contenido #11</div>
+        <div class="item">contenido #12</div>
     </div>
 </body>
 </html>
